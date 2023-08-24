@@ -120,7 +120,7 @@ async function updateUser(event) {
 
 // ================== DELETE ============ //
 async function deleteUser(id) {
-   const response = await fetch(`${endpoint}/users/${id}.json`, {
+   const response = await fetch(`${endpoint}/users/${id}`, {
       method: "DELETE",
    });
    if (response.ok) {
